@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math Genius"
+        android:textColor="@color/electric_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionCard"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="24 + 18"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/questionCard"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_gradient"
+        android:backgroundTint="#2A2A2A"
+        android:hint="Type Answer Here"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/text_secondary"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_gradient"
+        android:text="CHECK RESULT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>
